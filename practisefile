@@ -1,0 +1,27 @@
+ipeline {
+    agent any
+
+    stages {
+        stage('Build') {
+            steps {
+                echo 'Building the project...'                // sh 'make build'
+            }
+        }
+
+        stage('Test') {
+            steps {
+                echo 'Running tests...'
+                // Example: Run tests
+                // sh 'make test'
+            }
+        }
+
+        stage('Deploy') {
+            steps {
+                echo 'Deploying application...'
+                // Example: Deploy app
+                // sh 'make deploy'
+            }
+        }
+    }
+}
